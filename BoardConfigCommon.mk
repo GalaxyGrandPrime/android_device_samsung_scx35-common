@@ -93,3 +93,7 @@ BACKLIGHT_PATH := /sys/class/backlight/panel/brightness
 
 # Build system
 WITHOUT_CHECK_API := true
+
+# Malloc implementation
+MALLOC_SVELTE := true
+BOARD_USES_LEGACY_MMAP := true
