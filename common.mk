@@ -99,10 +99,10 @@ PRODUCT_PACKAGES += \
 	power.sc8830
 
 # Packages
-PRODUCT_PACKAGES += \
-	SamsungDoze \
-	Gello \
-	Snap
+# PRODUCT_PACKAGES += \
+#	SamsungDoze \
+#	Gello \
+#	Snap
 
 # Rootdir files
 PRODUCT_PACKAGES += \
