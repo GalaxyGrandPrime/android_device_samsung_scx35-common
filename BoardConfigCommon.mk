@@ -70,6 +70,9 @@ BOARD_CANT_REALLOCATE_OMX_BUFFERS := true
 # Board specific features
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
+# GPS
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/scx35-common/include
+
 # healthd
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.sc8830
 
