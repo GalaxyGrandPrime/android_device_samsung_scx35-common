@@ -45,18 +45,11 @@ BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 USE_BLUETOOTH_BCM4343 := true
 BOARD_CUSTOM_BT_CONFIG := device/samsung/scx35-common/bluetooth/libbt_vndcfg.txt
 
-# FM radio
-BOARD_HAVE_FM_BCM := true
-
 # Graphics
 BOARD_EGL_NEEDS_HANDLE_VALUE := true
-TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 
 # HWComposer
 USE_SPRD_HWCOMPOSER := true
-
-# Enable WEBGL in WebKit
-ENABLE_WEBGL := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
@@ -78,7 +71,6 @@ BOARD_HAL_STATIC_LIBRARIES := libhealthd.sc8830
 
 # Use dmalloc() for such low memory devices like us
 MALLOC_SVELTE := true
-BOARD_USES_LEGACY_MMAP := true
 
 # Bionic
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
@@ -93,11 +85,6 @@ BOARD_SEPOLICY_DIRS += device/samsung/scx35-common/sepolicy
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_sec
 
-# Enable dex-preoptimization to speed up the first boot sequence
-#WITH_DEXPREOPT := true
-#WITH_DEXPREOPT_PIC := true
-#WITH_DEXPREOPT_COMP := false
-
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_NO_CHARGER_LED := true
@@ -107,7 +94,3 @@ BACKLIGHT_PATH := /sys/class/backlight/panel/brightness
 
 # Build system
 WITHOUT_CHECK_API := true
-
-# Malloc implementation
-MALLOC_SVELTE := true
-BOARD_USES_LEGACY_MMAP := true

@@ -76,8 +76,7 @@ PRODUCT_PACKAGES += \
 	codec_pga.xml \
 	tiny_hw.xml \
 	audio.primary.sc8830 \
-	libaudio-resampler \
-	libatchannel_wrapper
+	libaudio-resampler
 
 # Common libs
 PRODUCT_PACKAGES += \
@@ -98,11 +97,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	power.sc8830
 
-# Packages
-# PRODUCT_PACKAGES += \
-#	SamsungDoze \
-#	Gello \
-#	Snap
+# GPS
+PRODUCT_PACKAGES += \
+	libgpspc \
+	libefuse
 
 # Rootdir files
 PRODUCT_PACKAGES += \
